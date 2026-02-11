@@ -1,0 +1,150 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    color: white;
+    text-align: center;
+    justify-items: center;
+    background-color: #fdf5f5;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url(files/fondoHM4.jpeg) no-repeat center center/cover;
+    filter: grayscale(.3);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1 { 
+    font-family: FuenteBoda, cursive; 
+    color: #8E4032;
+    font-size: 6rem;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+.content{
+    width: 100%;
+    height: auto;
+}
+.content p {
+    font-size: 1rem;
+    margin: 1rem 2rem;
+    font-family: TextoBoda;
+    text-shadow: 1px 1px 3px rgba(0,0,0,1.5);
+}
+#absolute{
+    position: fixed;
+    bottom: 0;
+    color: white;
+    padding: 0;
+    z-index: 1000;
+}
+#countdown {
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+#absolute h3 {
+    font-size: 2rem;
+    margin: .4rem;
+    color: #B35A44;
+    font-family: FechaBoda;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+.music-container {
+    padding: 5px;
+    color: #333;
+}
+
+button {
+    margin: .4rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #9B4737;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+button:hover { 
+    background-color: #B35A44; 
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(files/fondo.jpg);
+    filter: blur(.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 1s ease-out;
+}
+
+.overlay-content h1 {
+    color: #B35A44;
+    margin-bottom: 20px;
+    font-family: FuenteBoda, cursive;
+    font-size: 6.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.8);
+}
+
+/* Clase para ocultar el overlay con JS */
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+.carousel-container {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    justify-items: center;
+}
+
+.carousel-slide {
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+.carousel-text {
+    color: white;
+    text-align: center;
+}
+.carousel-text p {
+    font-family: TextoBoda;
+    font-size: 1.5rem;
+}
+
+.fade {
+    animation: fadeEffect 2s alternate;
+}
+
+@keyframes fadeEffect {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@font-face {
+    font-family: 'FuenteBoda';
+    src: url('fonts/Tangerine-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'TextoBoda';
+    src: url('fonts/Tinos-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FechaBoda';
+    src: url('fonts/Tangerine-Regular.ttf') format('truetype');
