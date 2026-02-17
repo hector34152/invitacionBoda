@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Boda - Invitación</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="hero start">
+        <div class="hero-content">
+            <h1>Hector & Kary</h1>
+        </div>
+    </section>
+    <section class="music-section">
+        <h3>Escucha nuestra cancion</h3>
+        <div class="player">
+            <div class="progress-area">
+                <span id="current-time" class="time">0:00</span>
+                <input type="range" id="progress-bar" value="0" step="0.1">
+                <span id="duration" class="time">0:00</span>
+            </div>
+            <div class="controls">
+                <i data-lucide="shuffle" class="icon-btn"></i>
+                <i data-lucide="skip-back" class="icon-btn"></i>
+                <div class="play-btn" id="play-pause">
+                    <i data-lucide="play" id="play-icon"></i>
+                </div>
+                <i data-lucide="skip-forward" class="icon-btn"></i>
+                <i data-lucide="repeat" class="icon-btn"></i>
+            </div>
+            <audio id="audio-element" src="files/playback.m4a"></audio>
+        </div>
+    </section>
+    <section class="intro">
+        <blockquote cite="https://es.wikipedia.org/wiki/Arte">
+        "Grábame como un sello sobre tu corazón; llévame como una marca sobre tu brazo. Fuerte es el amor, como la muerte..."
+            <footer>— <cite>Cantares 8:6</cite></footer>
+        </blockquote>
+        <h2>Padres de la novia</h2>
+        <p>Antonio Rivera Caldera
+            <br>Sara de la Rosa Ortiz</p>
+        <h2>Padres del novio</h2>
+        <p>Damaso Flores Garcia
+            <br>Ma. Guadalupe Picazo Collazo</p>
+        <p>Tenemos el honor de invitarte <br>a nuestra boda que se celebrara el proximo.</p>
+        <h1>JUNIO <br> 05 | 26</h1>
+    </section>
+    <section class="details">
+        <div class="card">
+            <div class="icon"><img src="files/church.png" alt="iglesia"></div> 
+            <div class="content">
+                La ceremonia religiosa se llevara acabo en el templo de Cristo Rey<br>
+                <br>
+                <strong>13:00 hrs</strong>
+            </div>
+            <a href="https://maps.app.goo.gl/pSz6tuL2w2MAaxxd7" class="button">UBICACIÓN</a>
+            <div class="corner-decoration"></div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="icon"><img src="files/copas.png" alt="salon"></div> 
+            <div class="content">
+                Despues de la ceremonia, te esperamos para celebrar en el salon de eventos "Jardin Galicia" <br>
+                <br>
+                <strong>16:00 hrs</strong>
+            </div>
+            <a href="https://maps.app.goo.gl/zGQsn4ca3BukpYYz5" class="button">UBICACIÓN</a>
+            <div class="corner-decoration"></div>
+        </div>
+    </section>
+    <section class="itinerario">
+        <h1>Itinerario</h1>
+        <table>
+            <tr>
+                <td class="icono"><img src="files/ceremonia.png" alt="ceremonia"><br>Ceremonia</td>
+                <td class="hora">13:00 hrs</td>
+            </tr>
+            <tr>
+                <td class="hora">15:00 hrs</td>
+                <td class="icono"><img src="files/recepcion.png" alt="recepcion"><br>Recepcion</td>
+            </tr>
+            <tr>
+                <td class="icono"><img src="files/comida.png" alt="comida"><br>Comida</td>
+                <td class="hora">15:40 hrs</td>
+            </tr>
+            <tr>
+                <td class="hora">18:00 hrs</td>
+                <td class="icono"><img src="files/piñata.png" alt="piñata "><br>Piñata</td>
+            </tr>
+            <tr>
+                <td class="icono"><img src="files/vals.png" alt="vals"><br>Vals</td>
+                <td class="hora">19:00 hrs</td>
+            </tr>
+            <tr>
+                <td class="hora">20:00 hrs</td>
+                <td class="icono"><img src="files/pastel.png" alt="pastel"><br>Pastel</td>
+            </tr>
+            <tr>
+                <td class="icono"><img src="files/baile.png" alt="baile"><br>Baile</td>
+                <td class="hora">20:30 hrs</td>
+            </tr>
+        </table>
+        <br>
+    </section>
+    <div class="card" id="ropa">
+        <div class="icon"><img src="files/ropa.png" alt="ropa"></div> 
+        <div class="content">
+            Codigo de vestimenta formal.
+        </div>
+        <div class="icon"><img src="files/regalo.png" alt="regalo"></div> 
+        <div class="content">
+            El mejor regalo es compartir este dia contigo. Si gustas apoyarnos en esta nueva etapa, cualquier aportacion sera bienvenida. <br>
+        </div>
+    </div>
+    <br>
+    <section id="asistencia">
+        <h1>Confirma tu asistencia</h1>
+        <p>Para hacer de nuestra boda un momento inolvidable, nos gustaria saber cuantos invitanos nos van a acompañar, por favor confirmanos tu asistencia</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyo_QqosIaU-4uI4HV-vWKrAy0Zl5Ru64jElb0uGKmuE7K9w/viewform?usp=publish-editor" class="button asistencia">CONFIRMAR ASISTENCIA</a>
+    </section>
+    <br>
+    <br>
+    <section class="hero end">
+        <h3>Nuestra historia no estaría completa sin ustedes.<br>¡Los esperamos!</h3>
+        <div id="contador">
+            <h2 style="font-weight: 300;">¡Faltan solo!</h2>
+            <div id="reloj">
+                <div class="unidad">
+                    <span id="dias">00</span>
+                    <div class="etiqueta">Días</div>
+                </div>
+                <div class="unidad">
+                    <span id="horas">00</span>
+                    <div class="etiqueta">Hrs</div>
+                </div>
+                <div class="unidad">
+                    <span id="minutos">00</span>
+                    <div class="etiqueta">Min</div>
+                </div>
+                <div class="unidad">
+                    <span id="segundos">00</span>
+                    <div class="etiqueta">Seg</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
